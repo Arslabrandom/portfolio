@@ -14,14 +14,14 @@ Array.from(funcBtns, (btn) => {
 
 Array.from(homebtn, (btn) => {
     btn.addEventListener('click', () => {
-        window.location.href = "http://localhost:3000/";
+        window.location.href = "/";
     });
 });
 
 function downloadCV() {
-    window.location.href = 'http://localhost:3000/downloadcv';
+    window.location.href = '/downloadcv';
 };
 
 function hireme() {
-    window.location.href = "http://localhost:3000/hireme";
+    window.location.href = "/hireme";
 };
