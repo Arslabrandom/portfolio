@@ -1,1 +1,27 @@
-const _0x3f1fef=_0x3572;(function(_0x3bc31c,_0x408d25){const _0x51d517=_0x3572,_0x16ce73=_0x3bc31c();while(!![]){try{const _0x3d55b8=parseInt(_0x51d517(0x1bf))/0x1+parseInt(_0x51d517(0x1c8))/0x2*(-parseInt(_0x51d517(0x1ce))/0x3)+parseInt(_0x51d517(0x1d0))/0x4*(-parseInt(_0x51d517(0x1cc))/0x5)+-parseInt(_0x51d517(0x1cf))/0x6+-parseInt(_0x51d517(0x1c9))/0x7+parseInt(_0x51d517(0x1bd))/0x8+parseInt(_0x51d517(0x1c1))/0x9*(parseInt(_0x51d517(0x1c2))/0xa);if(_0x3d55b8===_0x408d25)break;else _0x16ce73['push'](_0x16ce73['shift']());}catch(_0x4f729a){_0x16ce73['push'](_0x16ce73['shift']());}}}(_0x2878,0xbb26d));const homebtn=document[_0x3f1fef(0x1c7)](_0x3f1fef(0x1c4)),funcBtns=document[_0x3f1fef(0x1c7)](_0x3f1fef(0x1c5));Array[_0x3f1fef(0x1c3)](funcBtns,_0x2830f8=>{const _0x51d7cb=_0x3f1fef;_0x2830f8['addEventListener'](_0x51d7cb(0x1ca),()=>{const _0x59772e=_0x51d7cb;_0x2830f8[_0x59772e(0x1cd)]==_0x59772e(0x1c6)&&downloadCV();;_0x2830f8[_0x59772e(0x1cd)]==_0x59772e(0x1bb)&&hireme();;});}),Array['from'](homebtn,_0x3fa1f8=>{const _0x12114d=_0x3f1fef;_0x3fa1f8['addEventListener'](_0x12114d(0x1ca),()=>{const _0x1a81d5=_0x12114d;window[_0x1a81d5(0x1cb)][_0x1a81d5(0x1be)]=_0x1a81d5(0x1bc);});});function downloadCV(){const _0x5ddd88=_0x3f1fef;window[_0x5ddd88(0x1cb)][_0x5ddd88(0x1be)]=_0x5ddd88(0x1c0);};function hireme(){const _0x4c4857=_0x3f1fef;window[_0x4c4857(0x1cb)][_0x4c4857(0x1be)]='http://192.168.234.139:3000/hireme';}function _0x3572(_0x197498,_0x304a76){const _0x2878e6=_0x2878();return _0x3572=function(_0x357295,_0x3b00e4){_0x357295=_0x357295-0x1bb;let _0x2fa671=_0x2878e6[_0x357295];return _0x2fa671;},_0x3572(_0x197498,_0x304a76);}function _0x2878(){const _0x8688d0=['2184780Bqbpsb','940wKxQlu','hireme','http://localhost:3000/','9358856tiorzT','href','913276kQqeAC','http://localhost:3000/downloadcv','27bUwYiI','1940490bzcDCV','from','.red-home','.functionbtn','dwnldcd','querySelectorAll','46ftFpNL','2289245FvyNZV','click','location','10300nzyGPs','value','94362lqqipd'];_0x2878=function(){return _0x8688d0;};return _0x2878();};
+const homebtn = document.querySelectorAll('.red-home');
+const funcBtns = document.querySelectorAll('.functionbtn');
+
+Array.from(funcBtns, (btn) => {
+    btn.addEventListener('click', () => {
+        if (btn.value == 'dwnldcd') {
+            downloadCV();
+        };
+        if (btn.value == 'hireme') {
+            hireme();
+        };
+    });
+});
+
+Array.from(homebtn, (btn) => {
+    btn.addEventListener('click', () => {
+        window.location.href = "http://localhost:3000/";
+    });
+});
+
+function downloadCV() {
+    window.location.href = 'http://localhost:3000/downloadcv';
+};
+
+function hireme() {
+    window.location.href = "http://localhost:3000/hireme";
+};
