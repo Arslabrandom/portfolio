@@ -33,5 +33,5 @@ app.get('/downloadcv', (req, res) => {
 
 
 app.listen(PORT, () => {
-    console.log(`Server is running on port http://192.168.234.139:${PORT}/`);
+    console.log(`Server is running on port http://localhost:${PORT}/`);
 });
