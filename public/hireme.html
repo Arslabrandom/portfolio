@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Link Page</title>
+    <style>
+
+        body {
+            background-color: #2c2c2c;
+            font-family: 'poppins', sans-serif;
+        }
+        @font-face {
+            font-family: stone-sans;
+            src: url(/src/fonts/stone_static/Reality_Stone.ttf);
+        }
+
+        @font-face {
+            font-family: poppins;
+            src: url(/src/fonts/Poppins/Poppins-Regular.ttf);
+        }
+
+        h1 {
+            font-family: 'stone-sans', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #ffe54c;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #f2f2f2;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-family: 'poppins' sans-serif;
+            height: 100vh;
+            padding: 0 24px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            width: 100%;
+        }
+
+        .link {
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .buttons53-container {
+            display: flex;
+            margin-top: 36px;
+            gap: 20px;
+        }
+
+        .button-53 {
+            letter-spacing: .5px;
+            padding: 8px 16px 8px;
+            outline: 0;
+            border: 2px solid var(--white-dull);
+            cursor: pointer;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0);
+            color: #2c2c2c;
+            font-family: var(--font-poppins);
+            font-weight: 900;
+            font-size: .9rem;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+        }
+
+        .link-container a {
+            border: 2px solid #f2f2f2;
+        }
+
+        .button-53:after {
+            content: "";
+            background-color: #ffe54c;
+            width: 100%;
+            z-index: -1;
+            position: absolute;
+            height: 100%;
+            top: 7px;
+            left: -7px;
+            transition: 0.2s;
+        }
+
+        .button-53:hover:after {
+            top: 0px;
+            left: 0px;
+        }
+
+        @media (min-width: 768px) {
+            .button-53 {
+                padding: 13px 50px 13px;
+            }
+
+            h1 {
+                font-size: 2.6rem;
+            }
+
+            p {
+                width: 60%;
+            }
+
+            .link-container {
+                gap: 1.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <center>
+                <h1>Connect with me</h1>
+                <p>Feel free to reach out via any of the platforms below. Let's connect and create amazing things together!</p>
+            </center>
+            
+        </header>
+        <div class="link-container">
+            <a href="https://wa.me/+919045755655" class="link button-53" target="_blank">WhatsApp</a>
+            <a href="https://instagram.com/muhammad_riyaz_602" class="link button-53" target="_blank">Instagram</a>
+            <a href="mailto:riyazmo602@gmail.com" class="link button-53">Email Me</a>
+        </div>
+    </div>
+</body>
+
+</html>
